@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.Dashboard__sidbar {
+  max-width: 600px;
+  width: 100%;
+  background: #fafafa;
+  box-shadow: 10px 10px 60px 30px rgba(213, 231, 255, 0.5019607843);
+  margin-right: 30px;
+}
+.Dashboard__sidbar .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 65px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.26px;
+}
+.Dashboard__sidbar .sidbar__menu ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 46px;
+  flex-shrink: 0;
+  transition: all 1s;
+}
+.Dashboard__sidbar .sidbar__menu ul li a {
+  color: #9197B3;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+.Dashboard__sidbar .sidbar__menu ul li img {
+  margin-right: 10px;
+}
+.Dashboard__sidbar .sidbar__menu ul li:hover {
+  border-radius: 8px;
+  background: #5932EA;
+  flex-shrink: 0;
+}
+.Dashboard__sidbar .sidbar__menu ul li:hover a {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+.Dashboard__sidbar .sidbar__menu ul li:hover svg {
+  color: #fff;
+}
+.Dashboard__sidbar .sidbar__cart {
+  margin-top: 200px;
+}
+.Dashboard__sidbar .sidbar__cart .cart1 {
+  width: 250px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: linear-gradient(108deg, #EAABF0 7.37%, #4623E9 95.19%);
+}
+.Dashboard__sidbar .sidbar__cart .cart1 h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  padding-left: 5px;
+  padding-top: 12px;
+}
+.Dashboard__sidbar .sidbar__cart .cart1 button {
+  width: 203px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(79, 42, 234, 0.17);
+  border: none;
+  margin-left: 19px;
+  margin-top: 20px;
+  color: #4925E9;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  transition: all 1s;
+}
+.Dashboard__sidbar .sidbar__cart .cart1 button:hover {
+  border: 2px solid #fff;
+  background: linear-gradient(108deg, #EAABF0 7.37%, #4623E9 95.19%);
+  color: #FFF;
+}
+.Dashboard__sidbar .sidbar__cart .men-section1 {
+  display: flex;
+  align-items: center;
+  margin-top: 46px;
+  gap: 20px;
+}
+.Dashboard__sidbar .sidbar__cart .men-section1 .img_-MEN {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 42px;
+  margin-bottom: 20px;
+}
+.Dashboard__sidbar .sidbar__cart .men-section1 h4 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.Dashboard__sidbar .sidbar__cart .men-section1 p {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 25px;
+  margin-right: 50px;
+}
+.Dashboard__sidbar .sidbar__cart .men-section1 .chevron-down {
+  margin-bottom: 30px;
+}
+
+.Dashboard__main {
+  width: 1000px;
+  background: #FAFBFF;
+  margin: 30px;
+}
+
+@media screen and (max-width: 740px) {
+  .Dashboard__sidbar {
+    width: 80px;
+    height: 1198px;
+    flex-shrink: 0;
+  }
+  .Dashboard__sidbar .logo {
+    margin-left: 22px;
+  }
+  .Dashboard__sidbar .logo h3 {
+    display: none;
+  }
+  .Dashboard__sidbar .sidbar__menu a, .Dashboard__sidbar .sidbar__menu img {
+    display: none;
+  }
+  .Dashboard__sidbar .sidbar__menu li {
+    margin-left: 26px;
+    transition: all 0.1;
+  }
+  .Dashboard__sidbar .sidbar__menu li:hover {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    padding: 10px;
+    margin-left: 16px;
+  }
+  .Dashboard__sidbar .sidbar__menu li .img2 {
+    display: block;
+  }
+  .Dashboard__sidbar .cart1, .Dashboard__sidbar .title, .Dashboard__sidbar .chevron-down {
+    display: none;
+  }
+  .Dashboard__sidbar .img_-MEN {
+    margin-top: 250px;
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=steyl.css.map */
